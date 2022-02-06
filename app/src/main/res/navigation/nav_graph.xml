@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/devicesListFragment">
+
+    <fragment
+        android:id="@+id/devicesListFragment"
+        android:name="com.appfiza.phoneapp.ui.devices_list.DeviceListFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_devices_list">
+        <action
+            android:id="@+id/action_devicesListFragment_to_deviceDetailsFragment"
+            app:destination="@id/deviceDetailsFragment">
+            <argument
+                android:name="deviceID"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/deviceDetailsFragment"
+        android:name="com.appfiza.phoneapp.ui.device_details.DeviceDetailsFragment">
+        <argument
+            android:name="deviceID"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/myFavouritesDevicesFragment"
+        android:name="com.appfiza.phoneapp.ui.devices_favorites.MyFavouritesDevicesFragment"
+        android:label="@string/my_devices">
+        <action
+            android:id="@+id/action_myFavouritesDevicesFragment_to_deviceDetailsFragment"
+            app:destination="@id/deviceDetailsFragment">
+            <argument
+                android:name="deviceID"
+                android:defaultValue="0"
+                app:argType="integer" />
+        </action>
+    </fragment>
+</navigation>

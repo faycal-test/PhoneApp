@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">PhoneApp</string>
+
+    <string name="my_devices">My Devices</string>
+    <string name="home">Home</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="manufacturer">Manufacturer :</string>
+    <string name="model">Model :</string>
+    <string name="description">Description :</string>
+    <string name="body">Body :</string>
+    <string name="memory">Memory :</string>
+    <string name="chipset">Chipset :</string>
+    <string name="display">Display :</string>
+    <string name="platform">Platform :</string>
+    <string name="search">Search</string>
+    <string name="favorite">Favourite</string>
+    <string name="no_devices_found">No devices found.</string>
+    <string name="device_removed_from_favorites">Device removed from your favorites</string>
+    <string name="device_added_to_favorites">Device added to your favorites</string>
+
+</resources>

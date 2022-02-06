@@ -1,0 +1,165 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+}
+
+apply from: '../dependencies.gradle'
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.appfiza.phoneapp"
+        minSdk 21
+        targetSdk 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "com.appfiza.phoneapp.MockTestRunner"
+//        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // The following argument makes the Android Test Orchestrator run its
+        // "pm clear" command after each test invocation. This command ensures
+        // that the app's state is completely cleared between tests.
+        testInstrumentationRunnerArguments clearPackageData: 'true'
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    packagingOptions {
+        exclude "**/attach_hotspot_windows.dll"
+        exclude "META-INF/licenses/**"
+        exclude 'META-INF/*'
+    }
+
+
+    buildTypes {
+        debug {
+            manifestPlaceholders = [usesCleartextTraffic:"true"]
+        }
+        release {
+            manifestPlaceholders = [usesCleartextTraffic:"false"]
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    // Always show the result of every unit test when running via command line, even if it passes.
+    testOptions {
+        animationsDisabled = true
+        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+        unitTests {
+            includeAndroidResources = true
+            returnDefaultValues = true
+        }
+    }
+
+
+    buildFeatures {
+        viewBinding true
+        dataBinding true
+    }
+
+    sourceSets {
+
+        androidTest.java.srcDirs += "src/test-common/java"
+        test.java.srcDirs += "src/test-common/java"
+//        test {
+//            resources {
+//                srcDirs 'src/test/resources'
+//            }
+//        }
+        debug {
+            assets {
+                srcDirs 'src/debug/assets', 'src/androidTest/assets'
+            }
+            res {
+                srcDirs 'src/debug/res', 'src/androidTest/res'
+            }
+        }
+    }
+
+}
+
+dependencies {
+
+    implementation "androidx.core:core-ktx:$versions.coreKtxVersion"
+    androidTestImplementation "androidx.test:core-ktx:$versions.testCoreKtVersion"
+    implementation "androidx.appcompat:appcompat:$versions.appCompactVersion"
+    implementation "androidx.constraintlayout:constraintlayout:$versions.constraintVersion"
+    implementation "com.google.android.material:material:$versions.materialVersion"
+    implementation "androidx.legacy:legacy-support-v4:$versions.legacyVersion"
+
+    // JUnit & Espresso
+    testImplementation "junit:junit:$versions.jUnitLocalVersion"
+    androidTestImplementation "androidx.test.ext:junit:$versions.jUnitExtVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$versions.espressoVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$versions.espressoVersion"
+    androidTestImplementation "junit:junit:$versions.jUnitLocalVersion"
+    implementation "com.android.support.test.espresso:espresso-idling-resource:$versions.espressoVersion"
+    androidTestImplementation "androidx.test:runner:$versions.runnerVersion"
+    androidTestImplementation "junit:junit:$versions.jUnitLocalVersion"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutinesVersion"
+    androidTestImplementation "androidx.arch.core:core-testing:$versions.archCompomentVersion"
+    androidTestImplementation "androidx.fragment:fragment-testing:$versions.fragmentTestVersion"
+
+    androidTestImplementation "com.squareup.okhttp3:mockwebserver:$versions.okhttpVersion"
+
+    androidTestUtil "androidx.test:orchestrator:$versions.orchestratorVersion"
+
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$versions.coroutinesVersion"
+    testImplementation "androidx.arch.core:core-testing:$versions.archCompomentVersion"
+    testImplementation "app.cash.turbine:turbine:$versions.turbineVersion"
+
+    // Sandwich
+    implementation "com.github.skydoves:sandwich:$versions.sandwichVersion"
+
+    // Facebook Shimmer Effect
+    implementation "com.facebook.shimmer:shimmer:$versions.facebookShimmer"
+
+    // Network
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofitVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$versions.okhttpVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$versions.retrofitVersion"
+
+    // Network Testing
+    testImplementation "com.squareup.okhttp3:mockwebserver:$versions.okhttpVersion"
+
+
+    // Mockito
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:$versions.mockitoKotlinVersion"
+    testImplementation "org.mockito:mockito-inline:$versions.mockitoInlineVersion"
+    testImplementation "io.mockk:mockk:$versions.mockkVersion"
+    androidTestImplementation "io.mockk:mockk-android:$versions.mockkVersion"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$versions.glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$versions.glideVersion"
+
+    // Architecture components
+    implementation "androidx.lifecycle:lifecycle-extensions:$versions.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$versions.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycleVersion"
+
+    //Room
+    implementation("androidx.room:room-ktx:$versions.room")
+    testImplementation("androidx.room:room-testing:$versions.room")
+    kapt "androidx.room:room-compiler:$versions.room"
+
+    // Koin
+    implementation "io.insert-koin:koin-android:$versions.koinVersion"
+    androidTestImplementation "io.insert-koin:koin-test-junit4:$versions.koinVersion"
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.navVersion"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.navVersion"
+}

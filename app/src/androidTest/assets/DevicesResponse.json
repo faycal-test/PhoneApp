@@ -1,0 +1,148 @@
+{
+  "devices": [
+    {
+      "id": 1,
+      "manufacturer": "Google Inc.",
+      "is_favorite": false,
+      "model": "Google Pixel 3",
+      "image": "https://the-mobile-store.netlify.app/img/phone_1-min.jpg",
+      "price": "799$",
+      "description": "Staying too far from your loved ones? Video call them for hours on end. The weather is romantic? Listen to your favourite playlists all day long. Don’t want to go out this weekend? Then binge watch your favourite series on the Internet. The Pixel 3 ensures that there’s never a dull moment, all thanks to its powerful battery, impressive cameras and its expansive bezel-less display.",
+      "specs": {
+        "body": "145.6 x 68.2 x 7.9 mm (5.73 x 2.69 x 0.31 in)",
+        "memory": "64/128 GB, 4 GB RAM",
+        "battery": "Non-removable Li-Po 2915 mAh battery",
+        "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+        "display": "5.5 inches, 1080 x 2160 pixels, 18:9 ratio (~443 ppi density)",
+        "platform": "OS Android 9.0 (Pie)"
+      },
+      "stock": 49
+    },
+    {
+      "id": 2,
+      "manufacturer": "Samsung Electronics",
+      "is_favorite": false,
+      "model": "Samsung Note 9",
+      "image": "https://the-mobile-store.netlify.app/img/phone_2-min.jpg",
+      "price": "999$",
+      "description": "Galaxy Note 9 puts powerful technology in the hands of pioneers who demand more. Innovative features and design make it the only phone to keep up with the next generation of achievers.",
+      "specs": {
+        "body": "161.9 x 76.4 x 8.8 mm (6.37 x 3.01 x 0.35 in)",
+        "memory": "512 GB/8 GB RAM or 128 GB/6 GB RAM",
+        "battery": "Non-removable Li-Ion 4000 mAh battery",
+        "chipset": "Exynos 9810 Octa (10 nm)",
+        "display": "6.4 inches, 1440 x 2960 pixels, 18.5:9 ratio (~516 ppi density)",
+        "platform": "Android 8.1 (Oreo)"
+      },
+      "stock": 60
+    },
+    {
+      "id": 3,
+      "manufacturer": "Apple Inc.",
+      "is_favorite": false,
+      "model": "Apple iPhone XS",
+      "image": "https://the-mobile-store.netlify.app/img/phone_3-min.jpg",
+      "price": "999$",
+      "description": "Welcome to the big screens! Super Retina in two sizes — including the largest display ever on an iPhone. Even faster Face ID. The smartest, most powerful chip in a smartphone. And a breakthrough dual‑camera system. iPhone XS is everything you love about iPhone. Taken to the extreme.",
+      "specs": {
+        "body": "143.6 x 70.9 x 7.7 mm (5.65 x 2.79 x 0.30 in)",
+        "memory": "64/256/512 GB, 4 GB RAM",
+        "battery": "Non-removable Li-Ion 2658 mAh battery",
+        "chipset": "Apple A12 Bionic (7 nm)",
+        "display": "Super AMOLED, 5.8 inches, 1125 x 2436 pixels, 19.5:9 ratio (~458 ppi density)",
+        "platform": "iOS 12, upgradable to iOS 12.1.3"
+      },
+      "stock": 60
+    },
+    {
+      "id": 4,
+      "manufacturer": "Samsung Electronics",
+      "is_favorite": false,
+      "model": "Samsung Galaxy S9+",
+      "image": "https://the-mobile-store.netlify.app/img/phone_4-min.jpg",
+      "price": "999$",
+      "description": "The perfect formula of a gorgeous 5.8-inch screen, sexy dual-curved design and terrific camera. Whiplash-fast speeds, wireless charging and water resistance complete the package.",
+      "specs": {
+        "body": "158.1 x 73.8 x 8.5 mm (6.22 x 2.91 x 0.33 in)",
+        "memory": "64/128/256 GB, 6 GB RAM",
+        "battery": "Non-removable Li-Ion 3500 mAh battery",
+        "chipset": "Exynos 9810 Octa (10 nm)/Qualcomm SDM845 Snapdragon 845 (10 nm)",
+        "display": "Super AMOLED, 6.2 inches, 1440 x 2960 pixels, 18.5:9 ratio (~529 ppi density)",
+        "platform": "Android 8.0 (Oreo)"
+      },
+      "stock": 50
+    },
+    {
+      "id": 5,
+      "manufacturer": "Xiaomi Inc.",
+      "is_favorite": false,
+      "model": "Pocophone F1",
+      "image": "https://the-mobile-store.netlify.app/img/phone_5-min.jpg",
+      "price": "300$",
+      "description": "Pocophone F1 runs on the Qualcomm® Snapdragon™ 845 mobile platform, meaning you get Snapdragon's powerful AI engine on their most advanced flagship 10nm class chip. Enjoy unbeatable performance and lower power consumption.",
+      "specs": {
+        "body": "155.5 x 75.3 x 8.8 mm (6.12 x 2.96 x 0.35 in)",
+        "memory": "256 GB, 8 GB RAM or 64/128 GB, 6 GB RAM",
+        "battery": "Non-removable Li-Po 4000 mAh battery",
+        "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+        "display": "IPS LCD, 6.18 inches, 1080 x 2246 pixels, 18.7:9 ratio (~403 ppi density)",
+        "platform": "Android 8.0 (Oreo)"
+      },
+      "stock": 65
+    },
+    {
+      "id": 6,
+      "manufacturer": "Xiaomi Inc.",
+      "is_favorite": false,
+      "model": "Xiaomi Mi 8",
+      "image": "https://the-mobile-store.netlify.app/img/phone_6-min.jpg",
+      "price": "400$",
+      "description": "Astonishing value, insane performance, awesome photography, a larger than ever 18.7:9 AMOLED display and a cool new 3D Face recognition feature are all reasons why it is an amazing phone.",
+      "specs": {
+        "body": "154.9 x 74.8 x 7.6 mm (6.10 x 2.94 x 0.30 in)",
+        "memory": "64/128/256 GB, 6 GB RAM or 128 GB, 8 GB RAM",
+        "battery": "Non-removable Li-Po 3400 mAh battery",
+        "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+        "display": "Super AMOLED, 6.21 inches, 1080 x 2248 pixels (~402 ppi density)",
+        "platform": "Android 8.0 (Oreo)"
+      },
+      "stock": 65
+    },
+    {
+      "id": 7,
+      "manufacturer": "Huawei Technologies Co.",
+      "is_favorite": false,
+      "model": "Huawei Mate 10 Pro",
+      "image": "https://the-mobile-store.netlify.app/img/phone_7-min.jpg",
+      "price": "800$",
+      "description": "Supported by the revolutionary GPU Turbo technology, the image processing speed is greatly accelerated to bring you a smooth and immersive visual experience.",
+      "specs": {
+        "body": "154.2 x 74.5 x 7.9 mm (6.07 x 2.93 x 0.31 in)",
+        "memory": "128 GB, 6 GB RAM or 64 GB, 4 GB RAM",
+        "battery": "Non-removable Li-Po 4000 mAh battery",
+        "chipset": "Qualcomm SDM845 Snapdragon 845 (10 nm)",
+        "display": "AMOLED, 6.0 inches, 1080 x 2160 pixels, 18:9 ratio (~402 ppi density)",
+        "platform": "Android 8.0 (Oreo)"
+      },
+      "stock": 80
+    },
+    {
+      "id": 8,
+      "manufacturer": "Huawei Technologies Co.",
+      "is_favorite": false,
+      "model": "Honor 10 Lite",
+      "image": "https://the-mobile-store.netlify.app/img/phone_8-min.jpg",
+      "price": "330$",
+      "description": "The Honor 10 Lite is a fashion icon you can hold in the palm of your hand. Inspired by the beautiful color of the sky, HONOR chose a youthful, energetic and natural design that fades gradually from light to dark – Sky Blue.",
+      "specs": {
+        "body": "154.8 x 73.6 x 8 mm (6.09 x 2.90 x 0.31 in)",
+        "memory": "64/128 GB, 6 GB RAM or 64 GB, 4 GB RAM",
+        "battery": "Non-removable Li-Po 3400 mAh battery",
+        "chipset": "Hisilicon Kirin 710 (12 nm)",
+        "display": "IPS LCD, 6.21 inches, 1080 x 2340 pixels, 19.5:9 ratio (~415 ppi density)",
+        "platform": "Android 9.0 (Pie); EMUI 9"
+      },
+      "stock": 80
+    }
+  ]
+}

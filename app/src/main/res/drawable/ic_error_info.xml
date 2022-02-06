@@ -1,0 +1,45 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+  <path
+      android:pathData="M100,164C135.346,164 164,135.346 164,100C164,64.654 135.346,36 100,36C64.654,36 36,64.654 36,100C36,135.346 64.654,164 100,164Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="31.8781"
+          android:startX="100.783"
+          android:endY="113.714"
+          android:endX="100.783"
+          android:type="linear">
+        <item android:offset="0" android:color="#19DB2C58"/>
+        <item android:offset="1" android:color="#00DB2C58"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M100,148C126.51,148 148,126.51 148,100C148,73.49 126.51,52 100,52C73.49,52 52,73.49 52,100C52,126.51 73.49,148 100,148Z">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startY="84.1818"
+          android:startX="100"
+          android:endY="176.364"
+          android:endX="100"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFFF3366"/>
+        <item android:offset="1" android:color="#FFFFFFFF"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M100,85.614C98.411,85.614 97.123,86.902 97.123,88.491V100C97.123,101.589 98.411,102.877 100,102.877C101.589,102.877 102.877,101.589 102.877,100V88.491C102.877,86.902 101.589,85.614 100,85.614Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M100,108.632C98.411,108.632 97.123,109.92 97.123,111.509C97.123,113.098 98.411,114.386 100,114.386C101.589,114.386 102.877,113.098 102.877,111.509C102.877,109.92 101.589,108.632 100,108.632Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M74.105,100C74.105,114.301 85.699,125.895 100,125.895C114.301,125.895 125.895,114.301 125.895,100C125.895,85.699 114.301,74.105 100,74.105C85.699,74.105 74.105,85.699 74.105,100ZM120.14,100C120.14,111.123 111.123,120.14 100,120.14C88.877,120.14 79.86,111.123 79.86,100C79.86,88.877 88.877,79.86 100,79.86C111.123,79.86 120.14,88.877 120.14,100Z"
+      android:fillColor="#ffffff"
+      android:fillType="evenOdd"/>
+</vector>

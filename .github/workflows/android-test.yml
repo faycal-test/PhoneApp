@@ -1,0 +1,35 @@
+## 1
+name: Tests (Unit and UI)
+
+## Actions that will be executed when you push code currently none
+on:
+  pull_request:
+    branches:
+      - 'master'
+
+## 2
+jobs:
+  ## 3
+  unit_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          java-version: 1.8
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
+          settings-path: ${{ github.workspace }} # location for the settings.xml file
+
+      - name: Unit tests
+        run: ./gradlew test
+
+  android_tests:
+    runs-on: macos-latest
+    steps:
+
+      - uses: actions/checkout@v2
+
+      - name: Instrumentation Tests
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 29
+          script: ./gradlew connectedAndroidTest
