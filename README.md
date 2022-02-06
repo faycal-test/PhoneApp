@@ -4,8 +4,6 @@ You can download the [apk here](https://github.com/faycal-test/PhoneApp/raw/mast
 
 
 
-
-
 <table>
   <tr>
     <td>Home screen</td>
@@ -31,12 +29,12 @@ You can download the [apk here](https://github.com/faycal-test/PhoneApp/raw/mast
    <tr>
     <td align="center">Add to your favorites</td>
      <td align="center">Remove from your favorites</td>
-
+   <td align="center">Drawer menu</td>
   </tr>
   <tr>
     <td><img src="device-2022-02-06-074628.png" width="100%"/></td>
        <td><img src="device-2022-02-06-074640.png" width="100%"></td>
-  
+   <td><img src="device-2022-02-06-075712.png" width="100%"/></td>
   </tr>
   
 
